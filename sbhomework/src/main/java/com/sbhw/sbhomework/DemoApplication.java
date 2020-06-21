@@ -18,15 +18,16 @@ public class DemoApplication {
 
     @RequestMapping(value = "/")
     public String index() {
-		
 		return "index.html";
-		
-
 	}
 	
 	@RequestMapping(value="/new")
 	public String another() {
-    return "anotherpage.html";
+	return "anotherpage.html";
+	}
+	@RequestMapping(value="/last")
+	public String last() {
+    return "lastone.html";
 }
 
 }
